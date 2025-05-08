@@ -1,0 +1,23 @@
+{
+  "perfil": [
+    {
+      "nombre": "dede",
+      "email": "dedwdw",
+      "id": "6dd9c7a3-cdc0-4d83-9e2d-57989841b0cf"
+    }
+  ],
+  "productos": [
+    {
+      "id": "df808ab7-3a3d-40fa-9c6a-42f95456c8f6",
+      "nombre": "hola",
+      "precio": "12",
+      "descripcion": "h"
+    },
+    {
+      "id": "061f98a8-fa5a-48b6-a5e3-b912d4c2f98c",
+      "nombre": "producto1",
+      "precio": "42",
+      "descripcion": "chocolate"
+    }
+  ]
+}
