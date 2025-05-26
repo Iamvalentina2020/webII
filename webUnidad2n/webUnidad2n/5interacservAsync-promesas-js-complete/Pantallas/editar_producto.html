@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doguito Petshop | Actualizar producto</title>
+    <link rel="icon" href="../assets/img/doguitoadm.svg" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../assets/css/base/base.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/header.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/card.css" />
+    <link rel="stylesheet" href="../assets/css/register_client.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/inputs.css" />
+    <link rel="stylesheet" href="../assets/css/componentes/button.css" />
+    <link rel="stylesheet" href="../assets/css/register_product.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        src="../assets/img/doguitoadm.svg"
+        alt="Logo Doguito"
+        class="header__logo"
+      />
+      <nav>
+        <ul class="header__list-nav">
+          <li class="header__link"><a href="#">Dashboard</a></li>
+          <li class="header__link">
+            <a href="lista_producto.html">Productos</a>
+          </li>
+          <li class="header__link">
+            <a href="lista_cliente.html">Clientes</a>
+          </li>
+          <li class="header__link"><a href="#">Pets</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container flex flex--center flex--column">
+      <section class="card cadastro">
+        <h1 class="card__title">Editar producto</h1>
+        <form action="#" class="flex flex--column" data-form>
+          <div class="input-container">
+            <input
+              name="nombre"
+              id="nombre"
+              class="input"
+              type="text"
+              placeholder="nombre"
+              required
+              data-nombre
+            />
+            <label class="input-label" for="nombre">Nombre</label>
+            <span class="input-menssage-error">Este campo es requerido</span>
+          </div>
+          <div class="input-container register__price-container">
+            <input
+              name="precio"
+              id="precio"
+              class="input"
+              type="text"
+              placeholder="Precio"
+              required
+              data-precio
+            />
+            <label class="input-label" for="precio">Precio</label>
+            <span class="input-menssage-error">Este campo es requerido</span>
+          </div>
+          <div
+            class="textarea-container register_description-container"
+          >
+            <textarea
+              class="textarea register_description"
+              name="descripcion"
+              id="descripcion"
+              placeholder="Descripción"
+              required
+              data-descripcion
+            ></textarea>
+            <label class="textarea-label" for="descripcion">Descripción</label>
+            <span class="textarea-menssage-error">Este campo es requerido</span>
+          </div>
+          <button type="submit" class="button">Actualizar producto</button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="../controllers/actualizar_producto_controller.js"></script>
+  </body>
+</html>
